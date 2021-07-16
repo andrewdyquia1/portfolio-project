@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8e519e409b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class='nav'>
+        <div class="nav__flex-container">
+            <h2 class="nav__header-2"><a href="#" class="nav__link--header">Lorem Ipsum</a></h2>
+            <div class="nav__hamburger">
+                <div class="nav__bun nav__bun--1"></div>
+                <div class="nav__bun nav__bun--2"></div>
+                <div class="nav__bun nav__bun--3"></div>
+            </div>
+            <ul class="nav__item-container">
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#technologies" class="nav__link">Technologies</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="about" class="about">
+        <div class="about__flex-container">
+            <div class="about__profile-container about__flex-container--profile">
+                <img class="about__profile-img" src="images/profile.jpg" alt="profile picture of me">
+                <div class="about__profile-description--mobile">
+                    <h2 class="about__profile-name--mobile">Andrew Dyquiangco</h4>
+                    <h4 class="about__profile-role--mobile">Web Development Enthusiast</h4>
+                </div>
+            </div>
+            <div class="about__paragraph-container">
+                <div class="about__profile-description--desktop">
+                    <h2 class="about__profile-name--desktop">Andrew Dyquiangco</h4>
+                    <h4 class="about__profile-role--desktop">Web Development Enthusiast</h4>
+                </div>
+                <p class="about__paragraph">
+                    Hi! I'm Andrew Dyquiangco. I like to code and looking to get my first web development job! I am self-taught and am enamored by the possibilities coding has to offer. I have two associates named Belle and Pepper. And also they're dogs. Ruff Ruff.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <div class="projects__container">
+            <h1 class="projects__header-1">Projects</h1>
+            <div class="projects__project-container projects__flex-container">
+                <a href="#" class='projects__img-link'><img src="images/project 1.jpg" alt="picture of my project" class="projects__project-img"></a>
+                <div class="projects__text-container">
+                    <h2 class="projects__header-2"><a href="#" class='projects__link'>Project 1</a></h2>
+                    <p class="projects__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, rem voluptates eaque, quod hic asperiores laboriosam optio ab, nihil obcaecati illo praesentium amet aliquam autem soluta. Rem perspiciatis provident esse.</p>
+                    <h5 class="projects__header-5">Technologies Used:</h5>
+                    <ul class="projects__technologies-list">
+                        <li class="projects__technologies-item">HTML</li>
+                        <li class="projects__technologies-item">CSS</li>
+                        <li class="projects__technologies-item">Javascript</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="projects__project-container projects__flex-container">
+                <a href="#" class='projects__img-link'><img src="images/project 2.jpg" alt="picture of my project" class="projects__project-img"></a>
+                <div class="projects__text-container">
+                    <h2 class="projects__header-2"><a href="#" class='projects__link'>Project 1</a></h2>
+                    <p class="projects__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, rem voluptates eaque, quod hic asperiores laboriosam optio ab, nihil obcaecati illo praesentium amet aliquam autem soluta. Rem perspiciatis provident esse.</p>
+                    <h5 class="projects__header-5">Technologies Used:</h5>
+                    <ul class="projects__technologies-list">
+                        <li class="projects__technologies-item">HTML</li>
+                        <li class="projects__technologies-item">CSS</li>
+                        <li class="projects__technologies-item">Javascript</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="projects__project-container projects__flex-container">
+                <a href="#" class='projects__img-link'><img src="images/project 3.jpg" alt="picture of my project" class="projects__project-img"></a>
+                <div class="projects__text-container">
+                    <h2 class="projects__header-2"><a href="#" class='projects__link'>Project 1</a></h2>
+                    <p class="projects__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, rem voluptates eaque, quod hic asperiores laboriosam optio ab, nihil obcaecati illo praesentium amet aliquam autem soluta. Rem perspiciatis provident esse.</p>
+                    <h5 class="projects__header-5">Technologies Used:</h5>
+                    <ul class="projects__technologies-list">
+                        <li class="projects__technologies-item">HTML</li>
+                        <li class="projects__technologies-item">CSS</li>
+                        <li class="projects__technologies-item">Javascript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="technologies" class="technologies">
+        <div class="technologies__container">
+            <h1 class="technologies__header-1">Technologies</h1>
+            <div class="technologies__btn-container">
+                <button class="technologies__btn technology-button-active technologies__btn--all" data-active='on'>Show All</button>     
+                <button class="technologies__btn" data-active='off'>HTML</button>     
+                <button class="technologies__btn" data-active='off'>CSS</button>     
+                <button class="technologies__btn" data-active='off'>SCSS</button>     
+                <button class="technologies__btn" data-active='off' >Javascript</button>     
+                <button class="technologies__btn" data-active='off' >React</button>
+            </div>
+            <div class="technologies__grid-container technologies__card-container">
+                <div class="technologies__card">
+                    <a class="technologies__link" href="#">
+                        <div class="technologies__card--top">
+                            <img src="/images/code.jpg" alt="dummy image" class="technologies__card-img">
+                        </div>
+                        <div class="technologies__card--bottom">
+                            <h3 class="technologies__header-3">
+                                Dummy Project 4
+                            </h3>
+                            <div class="technologies__project-tech">
+                                <span class="technologies__span" data-tech='HTML'>HTML</span>
+                                <span class="technologies__span" data-tech='CSS'>CSS</span>
+                                <span class="technologies__span" data-tech='Javascript'>Javascript</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="technologies__card">
+                    <a class="technologies__link" href="#">
+                        <div class="technologies__card--top">
+                            <img src="/images/code.jpg" alt="dummy image" class="technologies__card-img">
+                        </div>
+                        <div class="technologies__card--bottom">
+                            <h3 class="technologies__header-3">
+                                Dummy Project 1
+                            </h3>
+                            <div class="technologies__project-tech">
+                                <span class="technologies__span" data-tech='HTML'>HTML</span>
+                                <span class="technologies__span" data-tech='CSS'>CSS</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="technologies__card">
+                    <a class="technologies__link" href="#">
+                        <div class="technologies__card--top">
+                            <img src="/images/code.jpg" alt="dummy image" class="technologies__card-img">
+                        </div>
+                        <div class="technologies__card--bottom">
+                            <h3 class="technologies__header-3">
+                                Dummy Project 2
+                            </h3>
+                            <div class="technologies__project-tech">
+                                <span class="technologies__span" data-tech='HTML'>HTML</span>
+                                <span class="technologies__span" data-tech='SCSS'>SCSS</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="technologies__card">
+                    <a class="technologies__link" href="#">
+                        <div class="technologies__card--top">
+                            <img src="/images/code.jpg" alt="dummy image" class="technologies__card-img">
+                        </div>
+                        <div class="technologies__card--bottom">
+                            <h3 class="technologies__header-3">
+                                Dummy Project 3
+                            </h3>
+                            <div class="technologies__project-tech">
+                                <span class="technologies__span" data-tech='HTML'>HTML</span>
+                                <span class="technologies__span" data-tech='CSS'>CSS</span>
+                                <span class="technologies__span" data-tech='React'>React</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="technologies__card">
+                    <a class="technologies__link" href="#">
+                        <div class="technologies__card--top">
+                            <img src="/images/code.jpg" alt="dummy image" class="technologies__card-img">
+                        </div>
+                        <div class="technologies__card--bottom">
+                            <h3 class="technologies__header-3">
+                                Dummy Project 5
+                            </h3>
+                            <div class="technologies__project-tech">
+                                <span class="technologies__span" data-tech='HTML'>HTML</span>
+                                <span class="technologies__span" data-tech='SCSS'>SCSS</span>
+                                <span class="technologies__span" data-tech='Javascript'>Javascript</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="technologies__card">
+                    <a class="technologies__link" href="#">
+                        <div class="technologies__card--top">
+                            <img src="/images/code.jpg" alt="dummy image" class="technologies__card-img">
+                        </div>
+                        <div class="technologies__card--bottom">
+                            <h3 class="technologies__header-3">
+                                Dummy Project 6
+                            </h3>
+                            <div class="technologies__project-tech">
+                                <span class="technologies__span" data-tech='HTML'>HTML</span>
+                                <span class="technologies__span" data-tech='CSS'>CSS</span>
+                                <span class="technologies__span" data-tech='Javascript'>Javascript</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="contact__container">
+            <h1 class="contact__header-1">Contact Me</h1>
+            <div class="contact__phone-email-container">
+                <div class="contact__phone-container">
+                    <h2 class="contact__header-2">Phone Number:</h2>
+                    <h4 class="contact__header-4"><a href="#" class='contact__link'>(xxx)xxx-xxxx</a></h4>
+                </div>
+                <div class="contact__email-container">
+                    <h2 class="contact__header-2">Email:</h2>
+                    <h4 class="contact_header-4"><a href="#" class='contact__link'>andrewdyquia.93@gmail.com</a></h4>
+                </div>
+            </div>
+            <div class="contact__social-container">
+                <ul class="contact__social-list">
+                    <li class='contact__social-icon'><a class='contact__link'href="#"><i class="fab fa-linkedin fa-2x contact__icon"></i></a></li>
+                    <li class='contact__social-icon'><a href="#" class='contact__link'><i class="fab fa-github fa-2x contact__icon"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
