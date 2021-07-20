@@ -14,6 +14,7 @@
     --light-grayish-blue: #C5C6C7;
     --very-light-grayish-blue: #cccdcf;
     --blue:#45A29E;
+    --light-grayish-blue-faded: rgba(202, 220, 238, 0.9);
     --header-1-size: 2rem;
     --header-1-margins: 15px;
     --section-top-bottom-padding:30px 0;
@@ -117,16 +118,32 @@
     color: var(--light-grayish-blue)
 }
 
+.about::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url(/images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    z-index: -1;
+}
+
 .about{
     display: flex;
     align-items: center;
-    background: #fff;
     max-width: 100vw;
     height: 90vh;
     padding: var(--section-top-bottom-padding);
     color: var(--dark-blue);
+    position: relative;
+    
 }
-
 
 .about__flex-container{
     margin: 0 auto;
@@ -136,34 +153,37 @@
     align-items: center;
 }
 
-
-.about__flex-container--profile{
-    display: flex;
-    width: 100%;
-    max-width: 500px;
-}
-
 .about__profile-description{
     margin-left: 10px;
+    width: 80%;
 }
+
+.about__profile-header-container{
+    padding: 20px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
 .about__profile-name{
     font-size: 2rem;
     padding-bottom: 15px;
 }
 
-.about__profile-role{
+.about__header-3{
     font-size: 1.5rem;
     padding-bottom: 10px;
 }
-
-.about__paragraph-container{
-    padding: 15px;
-    max-width: 500px;
+.about__header-4{
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 
+
 .about__paragraph{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.3;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .projects{
@@ -399,13 +419,19 @@
         transform: scale(1);
         transform-origin:0 50%;
     }
-
-    .about__flex-container--profile{
-        justify-content: initial;
+    
+    
+    .about__profile-description{
+        display: flex;
+        max-width: 1000px;
     }
-
-    .about__paragraph-container{
+    
+    .about__profile-header-container{
         padding: 0;
+    }
+    
+    .about__paragraph{
+        font-size: 1.5rem;
     }
 
     .projects__flex-container{
