@@ -3,6 +3,9 @@ const technologiesButtons = document.querySelectorAll('.technologies__btn')
 const technologiesProjectsTech = document.querySelectorAll('.technologies__project-tech')
 let activeButtons = document.querySelectorAll("[data-active='on']")
 const showAllButton = document.querySelector('.technologies__btn--all')
+const projects = document.querySelector('.projects')
+const technologies = document.querySelector('.technologies')
+const nav = document.querySelector('.nav')
 
 function toggleNavMenu(){
     const navMenu = document.querySelector('.nav__item-container')
@@ -69,7 +72,16 @@ function toggleButtonActivity(button, onOrOff){
     }  
 }
 
-
+function translateProjects(){
+    const projectContainers = document.querySelectorAll('.projects__project-container')
+    for(i = 0; i < projectContainers.length; i++){
+        const slightlyAboveBottomOfViewportHeight = projectContainers[i].getBoundingClientRect().top - window.innerHeight + 50
+        console.log(projectContainers[0].getBoundingClientRect().top - window.innerHeight)
+         if(slightlyAboveBottomOfViewportHeight < 0){
+            projectContainers[i].classList.add('projects-translated')
+        }
+    }
+}
 //if the node list of active buttons is empty, activate the 'show all' button. Will show all projects too
 function activateShowAllButton(){
 
@@ -119,3 +131,6 @@ function toggleProjectDisplay(button){
 hamburger.addEventListener('click', toggleNavMenu)
 technologiesButtons.forEach(button => button.addEventListener('click', toggleTechnologiesButton))
 technologiesButtons.forEach(button => button.addEventListener('click', activateShowAllButton))
+document.addEventListener('scroll', translateProjects)
+// console.log(projects.getBoundingClientRect().top)
+// console.log(nav.offsetHeight)
