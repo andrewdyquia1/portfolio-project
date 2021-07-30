@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+}
+
+:root{
+    --auto-margin-width: 90%;
+    --dark-blue: #1F2833;
+    --light-grayish-blue: #C5C6C7;
+    --very-light-grayish-blue: #cccdcf;
+    --blue:#45A29E;
+    --light-grayish-blue-faded: rgba(202, 220, 238, 0.9);
+    --header-1-size: 2rem;
+    --header-1-margins: 15px;
+    --header-2-margins: 10px;
+    --section-top-bottom-padding:5% 0;
+    --skills-paragraph-size: 1.4rem;
+    --skills-container-margin-bottom: 30px;
+}
