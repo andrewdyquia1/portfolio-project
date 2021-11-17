@@ -146,7 +146,7 @@
     width: 100%;
     height: 100%;
     opacity: 0.5;
-    background-image: url(/images/hero-image.jpg);/*from unsplash*/
+    background-image: url(./images/hero-image.jpg);/*from unsplash*/
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
@@ -433,7 +433,7 @@
     .projects__project-img{
         margin-right: 50px;
     }
-    
+
     .projects__text-container{
         max-width: 40vw;
     }
