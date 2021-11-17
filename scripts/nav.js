@@ -13,7 +13,7 @@ function toggleNavMenu(){
     navBunMid.classList.toggle('nav__bun--mid-active')
     navBunBot.classList.toggle('nav__bun--bot-active')
     hamburger.classList.toggle('nav__hamburger-active')
-    hamburger.classList.toggle('nav__x-active', 'nav__item--active')
+    hamburger.classList.toggle('nav__x-active')
     navItems.forEach(item => item.classList.toggle('nav__item--active'))
 }
 

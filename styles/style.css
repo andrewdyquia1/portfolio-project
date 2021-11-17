@@ -18,6 +18,7 @@
     --header-1-margins: 15px;
     --header-2-margins: 10px;
     --section-top-bottom-padding:5% 0;
+    --projects-max-width: 400px;
     --skills-paragraph-size: 1.4rem;
     --skills-container-margin-bottom: 30px;
     --skills-left-grid-column: 1 / 4;
@@ -232,10 +233,13 @@
     transition: 325ms;
     opacity: 1;
 }
+
 .projects__img-link{
     margin-bottom: 15px;
-    width: 350px;
-    height: 235px;
+    width: 80vw;
+    max-width: var(--projects-max-width);
+    height: 40vw;
+    max-height: 200px;
 }
 
 .projects__project-img{
@@ -245,7 +249,8 @@
 }
 
 .projects__text-container{
-    width: 350px;
+    width: 80vw;
+    max-width: var(--projects-max-width);
     color: var(--dark-blue);
 }
 
@@ -522,7 +527,7 @@
     }
 
     .projects__text-container{
-        width: 40vw;
+        max-width: 40vw;
     }
     
     .skills__grid-container{
