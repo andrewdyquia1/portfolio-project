@@ -50,9 +50,15 @@
     text-decoration: none;
     font-size: 1.0rem;
 }
+
+.nav__button{
+    background-color: var(--dark-blue);
+    border: none;
+    cursor: pointer;
+}
+
 .nav__hamburger{
     width: 55px;
-    cursor: pointer;
 }
 
 .nav__bun{

@@ -22,8 +22,14 @@ function toggleNavMenu(){
 
 hamburger.addEventListener('click', toggleNavMenu)
 navHome.addEventListener('click', () => {
-    if(navActive){
+    if(navActive && window.getComputedStyle(hamburger).display == 'block'){
+        console.log('hi')
         toggleNavMenu()
     } 
 })
-navItems.forEach(item => item.addEventListener('click', toggleNavMenu))
+navItems.forEach(item => item.addEventListener('click', () => {
+    if(navActive && window.getComputedStyle(hamburger).display == 'block'){
+        console.log('hi')
+        toggleNavMenu()
+    }
+}))
