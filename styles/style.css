@@ -27,7 +27,7 @@
 }
 
 .nav{
-    height: 100px;
+    height: 80px;
     background-color: var(--dark-blue);
     color: var(--blue);
     max-width: 100vw;
@@ -110,7 +110,6 @@
 
 .nav__item-container{
     position: absolute;
-    top: 9vh;
     right: 0;
     transition: 300ms top;
 }
@@ -128,12 +127,12 @@
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    top: 13vh;
-    font-size: 2.5rem;
+    top: 80px;
+    font-size: 2rem;
     font-weight: 700;
     background: var(--dark-blue);
     min-width: 100vw;
-    height: 60vh;
+    height: 250px;
 }
 
 .nav__link{
